@@ -1,4 +1,4 @@
-# Dataset_analysis
+# Overview
 This repository containing the scripts for Waymo dataset analysis:
 - Waymo loader class for parsing data
 - Visualization of image and bounding boxes
@@ -16,7 +16,7 @@ Front Camera Image and Bounding boxes |
 :-------------------------:
 <img src="assets/Img_bbox.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 78%; height: auto;" >  |  <img src="assets/LiDAR_Cam_fusion.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 75%; height: auto;">
 
-## Getting started
+## Setup and Usage
 1. Setup the environment
 ```
 # Clone the repo
