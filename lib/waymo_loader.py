@@ -17,16 +17,17 @@ from lib import tools
 
 class WaymoClassMapping:
     """Class to map class IDs from Waymo dataset to class names"""
-
-    label_conversion_map = {
-      1: 2,   # Person is ped
+    """
+    COCO_to_waymo = {
+      1: 2,   # Person is pedestrian
       2: 4,   # Bicycle is bicycle
       3: 1,   # Car is vehicle
       4: 1,   # Motorcycle is vehicle
       6: 1,   # Bus is vehicle
       8: 1,   # Truck is vehicle
       13: 3,  # Stop sign is sign
-  }
+    }
+    """
     mapping_id_to_name:dict = {
         0: "undefined",
         1: "vehicle",

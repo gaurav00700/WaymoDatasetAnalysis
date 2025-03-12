@@ -16,7 +16,7 @@ def read_frame(seq_path:str)->list[open_dataset.Frame]:
     return frames
 
 def translate_label_to_wod(label):
-  """Translate a single COCO class to its corresponding WOD class.
+  """Translate a single COCO class to its corresponding Waymo open dataset (WOD) class.
 
   Note: Returns -1 if this COCO class has no corresponding class in WOD.
 
@@ -27,7 +27,7 @@ def translate_label_to_wod(label):
     Int WOD class label, or -1.
   """
   label_conversion_map = {
-      1: 2,   # Person is ped
+      1: 2,   # Person is pedestrian
       2: 4,   # Bicycle is bicycle
       3: 1,   # Car is vehicle
       4: 1,   # Motorcycle is vehicle

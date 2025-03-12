@@ -94,9 +94,7 @@ def main(save_data:bool= False):
             for frame_id, frame_anns in cam_anns.items():
 
                 # Create a dictionary to store the labels for each camera ID and frame ID
-                labels_dict = {
-                    frame_id: {"camera_id": cam_id, "labels": frame_anns['bboxes']}
-                    }
+                labels_dict = {"camera_id": cam_id, "bboxes": frame_anns['bboxes']}                    
 
                 # Save the labels to a JSON file.
                 json_path = os.path.join(ann_dir, f"{frame_id}.json") # Save the image to the directory           
