@@ -273,3 +273,19 @@ if __name__ == "__main__":
     
     # Extract the 3D bounding boxes from the frame's annotations.
     frame.laser_labels = frame_utils.parse_label_annotations(frame)
+
+    # Extract the 3D bounding boxes from the frame's annotations.
+    for laser_label in frame.laser_labels:
+        center_x = laser_label.box.center_x
+        center_y = laser_label.box.center_y
+        center_z = laser_label.box.center_z
+        width = laser_label.box.width
+        length = laser_label.box.length
+        heading = laser_label.box.heading
+        speed_x = laser_label.metadata.speed_x
+        speed_y = laser_label.metadata.speed_y
+        accel_x = laser_label.metadata.accel_x
+        accel_y = laser_label.metadata.accel_y
+        label_type = laser_label.type
+        obj_id = laser_label.id
+        num_points = laser_label.num_lidar_points_in_box
